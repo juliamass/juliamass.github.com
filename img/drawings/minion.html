@@ -55,22 +55,49 @@ border:3px solid grey;
 .straps:hover{
 -webkit-transition: all 1s ease-in;
 -webkit-transform: scaleX(-1) rotate(150deg);
-background-color:green;
 }
 
-.straps:after{
+.strap2{
 content: "";
 position:absolute;
-top:30px;
-left:100px;
+top:190px;
+left:108px;
 width: 70px;
 height: 18px;
 background:#527ACC;
 border:3px solid grey;
--webkit-transform: scaleX(-1) rotate(-50deg);
+-webkit-transform: scaleX(-1) rotate(45deg);
 
 }
 
+.strapdot{
+	position:relative;
+	top:160px;
+	left:50px;
+	width: 10px;
+	height: 10px;
+	background: grey;
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	
+	
+}
+
+.strapdot:after{
+	content: "";
+	position:absolute;
+	top:10px;
+	left:70px;
+	width: 10px;
+	height: 10px;
+	background: grey;
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	
+	
+}
 .mouth{
 position:absolute;
 top:130px;
@@ -239,6 +266,8 @@ z-index:3;
 }
 
 </style>
+
+<body>
 </head>
 <div class="body">
 <div class="iris">
@@ -246,6 +275,7 @@ z-index:3;
 <div class="pupil">
 </div>
 <div class="eyes">
+
 <div class="glasses"></div>
 </div>
 <div class="mouth"></div>
@@ -253,12 +283,15 @@ z-index:3;
         <div class="main"></div>
         <div class="toppart"></div>
 	<div class="straps"></div>
+	<div class="strap2"></div>
+	<div class="strapdot"</div>
         </div>
 <div class="legs">
 <div class="feet">
 </div>
 </div>
 </div>
+</body>
 
 </html>
 
