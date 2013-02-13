@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+.body{
+ width:170px;
+   height: 300px;
+   background: yellow;
+   position: absolute;
+   left:80px;
+   -webkit-border-radius: 60px;
+   -webkit-border-top-right-radius: 100px;
+   -webkit-border-top-left-radius: 100px;
+}
+
+.clothes{
+
+}
+
+.main{
+position:absolute;
+top:250px;
+left:0;
+width: 170px;
+ height: 50px;
+ background: #527ACC;
+   -webkit-border-bottom-right-radius: 60px;
+   -webkit-border-bottom-left-radius: 60px;
+}
+
+.toppart{
+position:absolute;
+top:200px;
+left:40px;
+width: 90px;
+height: 60px;
+background:#527ACC;
+}
+
+.straps{
+position:absolute;
+top:190px;
+left:-10;
+width: 70px;
+height: 18px;
+background:#527ACC;
+border:3px solid grey;
+-webkit-transform: scaleX(-1) rotate(160deg);
+}
+
+
+.strap2{
+content: "";
+position:absolute;
+top:190px;
+left:108px;
+width: 70px;
+height: 18px;
+background:#527ACC;
+border:3px solid grey;
+-webkit-transform: scaleX(-1) rotate(45deg);
+
+}
+
+.strapdot{
+	position:relative;
+	top:-295px;
+	left:50px;
+	width: 10px;
+	height: 10px;
+	background: grey;
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	
+	
+}
+
+.strapdot:after{
+	content: "";
+	position:absolute;
+	top:10px;
+	left:70px;
+	width: 10px;
+	height: 10px;
+	background: grey;
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	
+	
+}
+
+  
+
+.eyes{
+position:relative;
+top:65px;
+left:28px;
+width: 55px;
+height: 45px;
+background: white;
+-moz-border-radius: 55px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+
+}
+
+.eyes:after{
+content: "";
+position:absolute;
+top:5px;
+left:60px;
+width: 55px;
+height: 45px;
+background: white;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+}
+  
+  @-webkit-keyframes narrow {
+    0% {width:0; }
+   100% {width: 500px; }
+} 
+  
+  .eyes:hover{
+      background-color:yellow;     
+  }
+  
+  
+.iris{
+position:absolute;
+top:20px;
+left:20px;
+width: 18px;
+height: 18px;
+background: brown;
+-moz-border-radius: 55px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+z-index:1;
+
+}
+
+.iris:after{
+content: "";
+position:absolute;
+top:5px;
+left:60px;
+width: 18px;
+height: 18px;
+background: brown;
+-moz-border-radius: 55px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+
+}
+
+
+.pupil{
+position:absolute;
+top:7px;
+left:5px;
+width: 7px;
+height: 7px;
+background: black;
+-moz-border-radius: 55px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+z-index:2;
+}
+
+.pupil:after{
+content: "";
+position:absolute;
+top:4px;
+left:60px;
+width: 7px;
+height: 7px;
+background: black;
+-moz-border-radius: 55px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+z-index:2;
+}
+.glasses{
+position:absolute;
+top:54px;
+left:19px;
+border-radius: 40px;
+width:55px;
+height:55px;
+border:8px solid #7B7F89;
+z-index:1;
+}
+
+.glasses:after{
+content: "";
+position:absolute;
+top:-5px;
+left:55px;
+border-radius: 40px;
+width:55px;
+height:55px;
+border:8px solid #7B7F89;
+}
+  
+@-webkit-keyframes slide{
+   0% { -webkit-transform: translate(0,0); }
+   100% {  -webkit-transform: translate(0, 20px); }
+}
+  
+  .glasses:hover{
+     -webkit-animation: slide 2s 0.3s;
+     -webkit-transition: all 0.7s linear;
+    
+  }
+  
+  .mouth:hover{
+  
+  }
+
+.container{
+width:500px;
+height:500px;	
+}
+    
+  
+     @-webkit-keyframes drop{
+   0% { -webkit-height:15px; }
+   100% {  -webkit-height: 35px; }
+}
+ 
+
+ @-webkit-keyframes move {
+   0% { -webkit-transform: translate(0px,0); }
+    100% {  -webkit-transform: translate(20px, 0); }
+}
+  
+  @-webkit-keyframes bigger{
+   0% {height:45px; width:60px}
+   100% { height:100px; width:60px}
+}
+
+ @-webkit-keyframes flying {
+   0% { -webkit-transform:  translate(-50px,100px) scale(0);}
+    100% {  -webkit-transform: translate(30px,20px) scale(1); }
+}
+
+@-webkit-keyframes goheart {
+  0%   { opacity:0%; }
+  50% { opacity:100%; }
+  100% { opacity:0%; }
+
+}
+
+
+ img {
+width:40px;
+height:40px;
+position:absolute;
+top:10px;
+left:250px;
+
+}
+
+img:hover{
+}
+
+.container:hover .mouth {
+    height:25px; 
+    -webkit-animation: bigger 5s linear 4s;
+    -webkit-animation: mouth 2s linear s;
+    -webkit-animation: move 4s ease;
+    -webkit-transition: all 0.7s linear 0.6s;
+    -webkit-animation-fill-mode: forwards;
+    }
+
+    .container:hover .glasses{
+     -webkit-animation: slide 3s 0.1s;
+     -webkit-transition: all 0.7s linear;
+     -webkit-animation-fill-mode: forwards;
+  }
+
+    .container:hover img{
+	-webkit-animation: goheart 2s ease;
+	-webkit-animation: flying 2s linear 2.3s;
+     -webkit-animation-fill-mode: forwards;
+
+  }
+
+
+  
+  
+  .stash{
+position:absolute;
+top:-20px;
+left:-20px;
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid #333 ;
+  border-top: 25px solid #333;
+  border-left: 30px solid #333;
+  border-bottom:30px solid transparent ;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+ 
+}
+  
+  .mouth{      
+    background-color:red; box-shadow: 0 0 9px #333;
+    position:absolute;
+    top:150px;
+    left:60px;
+    height:15px;
+    width:30px;
+    border-radius: 0 0 90px 90px;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+ 
+  }
+  
+  
+
+.legs{
+position:absolute;
+top:290px;
+left:50px;
+border-bottom: 35px solid #527ACC;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+height: 0;
+width: 15px;
+-webkit-transform: scaleX(-1) rotate(180deg);
+}
+
+.legs:after{
+content: "";
+position:absolute;
+top:0px;
+left:20px;
+border-bottom: 35px solid #527ACC;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+height: 0;
+width: 15px;
+}
+
+.feet{
+position:relative;
+top:0px;
+left:23px;
+width: 50px;
+height: 20px;
+background: black;
+-webkit-border-radius: 5px 15px 20px / 10px;
+z-index:3;
+}
+
+.feet:after{
+content: "";
+position:absolute;
+top:0px;
+left:-50px;
+width: 50px;
+height: 20px;
+background: black;
+-webkit-border-radius: 5px 15px 20px / 10px;
+-webkit-transform: scaleX(-1) rotate(10deg);
+z-index:3;
+}
+
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+
+
+  .container:hover .heartcss .heart{
+	-webkit-animation: goheart 2s;
+	-webkit-animation: flying 2s linear 2.3s;
+   -webkit-animation-fill-mode: forwards;
+
+
+}
+
+.heartcss{
+	position:absolute;
+	left:250px;
+	top:0;
+	
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+					
+</style>
+
+<body>
+</head>
+<div class="body">
+  <div class="container">
+
+	<div class="eyes">
+        	<div class="iris">
+        	<div class="pupil"></div>
+        </div>
+<div class="heartcss">
+	<div class="heart">	
+	</div>
+</div>	
+     </div>
+  
+	<div class="glasses"></div>
+	
+  
+  <div class="mouth">
+  	<div class="stash">
+       </div>
+    </div>
+  </div>
+ 
+	<div class="clothes">
+     	<div class="main"></div>
+       	<div class="toppart"></div>
+		<div class="straps"></div>
+		<div class="strap2"></div>
+		<div class="strapdot"</div>
+    </div>
+	<div class="legs">
+			<div class="feet">
+  			
+			</div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>
