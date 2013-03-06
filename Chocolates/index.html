@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8" />
+
+	        <title>Chocolates</title>
+
+<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.lettering-0.6.1.min.js"></script>
+<script src="js/jquery.scrollorama.js"></script>
+</head>
+<body>
+	
+<div id="container">
+			
+			
+			<div class="backgrounds">
+				
+				<div class="color-block-1">
+							<img class="image1" src="images/front100.png" width="792" height="612" alt="Front100">
+							<img class="image1bg" src="images/bg100.png" width="792" height="612" alt="Bg100">
+							<a class="down" href="#"><img class="scroll"src="images/scroll.png" width="792" height="612" alt="Scroll"></a>
+						
+					
+						<div class="banner-swing">
+							<img class="banner" src="images/banner.png" width="792" height="612" alt="Banner">
+							<img class="choc" src="images/choc.png" width="792" height="612" alt="Choc">
+		
+							</div>
+				</div>
+				<div class="color-block-2"></div>
+				<div class="color-block-3"></div>
+				<div class="color-block-4"></div>
+				<div class="color-block-5"></div>
+			</div>  <!-- end backgrounds -->
+	
+</div>  <!-- end container -->
+
+<script>
+	$(document).ready(function() {
+		
+		// initialize the plugin, pass in the class selector for the sections of content (blocks)
+		var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
+		
+		// assign function to add behavior for onBlockChange event
+		scrollorama.onBlockChange(function() {
+			var i = scrollorama.blockIndex;
+			$('#console')
+				.css('display','block')
+				.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+		});
+		
+	
+		
+
+		$('#title span').each(function() {
+			scrollorama
+				.animate($(this),{ duration: 400, property:'top', end: Math.random()*120-180 })
+				.animate($(this),{ duration: 300, property:'rotate', start:0, end:Math.random()*720-360 });
+		});
+		
+		// animate some examples
+		scrollorama
+			.animate('#fly-in',{ delay: 400, duration: 300, property:'left', start:-1400, end:0 })
+
+		
+
+		
+		$clone.find('span')
+			.each( function( idx, el ){
+				scrollorama.animate( $(this), {	delay:400, duration: 500, 
+												property:'top', end: 300,
+												easing: easing_array[idx] });
+			})
+		
+	});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2821890-9']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+
+
+</html>
+
+
+
+
