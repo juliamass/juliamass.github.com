@@ -9,7 +9,10 @@
 
 <link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
 <script src="js/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
 <script src="js/jquery.lettering-0.6.1.min.js"></script>
+<!--CDN link for the latest TweenMax-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="js/jquery.scrollorama.js"></script>
 </head>
 <body>
@@ -25,11 +28,14 @@
 							<a class="down" href="#"><img class="scroll"src="images/scroll.png" width="792" height="612" alt="Scroll"></a>
 						
 					
-						<div class="banner-swing">
+						<div class="scrollblock">
 							<img class="banner" src="images/banner.png" width="792" height="612" alt="Banner">
-							<img class="choc" src="images/choc.png" width="792" height="612" alt="Choc">
-		
 							</div>
+							
+							<div class="">
+								<img class="choc" src="images/choc.png" width="792" height="612" alt="Choc">
+							</div>
+							
 				</div>
 				<div class="color-block-2"></div>
 				<div class="color-block-3"></div>
@@ -38,6 +44,8 @@
 			</div>  <!-- end backgrounds -->
 	
 </div>  <!-- end container -->
+
+
 
 <script>
 	$(document).ready(function() {
