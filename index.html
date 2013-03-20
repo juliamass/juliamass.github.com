@@ -1,75 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>| Home |</title>
- 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	        <title>Chocolates</title>
 
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-   <!--[if lt IE 9]>
-     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-   <![endif]-->
-
+			<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
+			<link rel="stylesheet" href="css/normalize.css" type="text/css">
 </head>
-
-
-
-<body>
-
-<div class="container-fluid">
-		
-		<div class="row-fluid">
-
-	<header class="span12 hero-unit">
-				<img src="img/kitties.gif" width="500" height="313" alt="Kitties"class="span7 pull-right" />
-		<h2>randomness:</h2>
-		<h1 class="lead span4"> i love kitties and massage</h1>
-		
-		
-		<section class="span4">
+<body class="mychocolates">
+		<div id="content-wrapper">
 			
-		<dl class="dl-horizontal">
-			<dt><em>Julia Barbosa</em></dt>	
-			<dd><em>class 2014</em></dd>
-		</dl>
-		</section>
-		
-		<section class="span6">
-		<strong><p>Shapes</p></strong>
-		<a href="img/drawings/mickey2.html" target="">Shape1</a>
-		<a href="img/drawings/minion.html" target="">Shape2</a>
-		<a href="img/drawings/pepper.html" target="">Shape3</a>
-		<strong><p>Animated Shapes</p></strong>
-		<a href="img/drawings/animated/minion.html" id="" title="minion">Minion In Love |</a>
-		<a href="img/drawings/animated/pepper.html" id="" title="pepper">Pepper Adventure</a>
-		<strong><p>Proposal</p></strong>
-		<a href="Proposal.html" id="" title="prop">Proposal</a>
-		<strong><p>Comps</p></strong>
-		<a href="comps.html" id="" title="prop">Comps Sketches</a>
-		</section>
-	   <strong><p>Comps2</p></strong>
-			<a href="Chocolates/index.html" title="index" id="" title="prop">Website</a>
-			</section>
-				
-		
-	</header>	
-	</div> 
-</div>	
+			
 	
-		
+			
+				<div class="color-block-1">
+							<img id="image1" src="images/front100.png" width="792" height="612" alt="Front100">
+							<img class="image1bg" src="images/bg100.png" width="792" height="612" alt="Bg100">
+							<a class="down" href="#"><img class="scroll"src="images/scroll.png" width="792" height="612" alt="Scroll"></a>
+				
+							<img id="fly-it" class="banner place" src="images/banner.png" width="792" height="612" >
+							<img class="choc" src="images/choc.png" width="792" height="612" alt="Choc">
+						
+			</div>
+			
+				<div class="color-block-2"></div>
+				<div class="color-block-3"></div>
+				<div class="color-block-4"></div>
+				<div class="color-block-5"></div>
 
+	
+</div>  <!-- end container -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
 
-	<footer class="span12 offset">
-<em><span class="icon-print"></span> ......</em>
-	</footer>
+var showBanner = 1
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
+$(document).scroll(	
+		function () {
+			if (showBanner) {
+				$("#fly-it").animate({left: [ "800px", "swing" ]},300,false);
+				showBanner = 0;
+				setTimeout(function () {$("#fly-it").animate({left: [ "-900px", "swing" ]},300,false);},3000)
+			}
+		}
+			);
+
+</script>
+
 </body>
 
 
 </html>
+
+
+
+
