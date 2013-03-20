@@ -47,7 +47,7 @@
 $(function() {
     var x = 0;
     while(x < 100) {
-      var card = $("<div class='choco' id='choco-" + x +"'><p></p></div>");
+      var card = $("<div class='choco'><p></p></div>");
       $("#choco_container").append(card);
       x++;
     }
@@ -74,12 +74,7 @@ $(document).scroll(
         			var controller = $.superscrollorama();
         			// individual element tween examples
         		controller.addTween('.choco', TweenMax.from( $('.choco'), .5, {css:{opacity: 0}}));
-        		  var offset = 0;
-        		  var x = 0;
-        		  while(x < 100) {
-        		      controller.addTween("#choco-" + x, 
-        		      x++;
-        		  }
+        		
         		});
         	</script>
 </script>
