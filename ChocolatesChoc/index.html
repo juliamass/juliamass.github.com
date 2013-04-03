@@ -2,81 +2,369 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 
-	        <title>Chocolates</title>
-
-			<link rel="stylesheet" href="css.css" type="text/css" media="screen" title="no title" charset="utf-8">
-			<link rel="stylesheet" href="normalize.css" type="text/css">
+	<title>Chocolates</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Gabriela' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Serif:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="css.css" type="text/css">
+	
+	
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.transit.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.scrollorama.js"></script>
+	
 </head>
-<body class="mychocolates">
-		<div id="content-wrapper">
-			
-			
-	
-			
-				<div class="color-block-1">
-							<img id="image1" src="images/front100.png" width="792" height="612" alt="Front100">
-							<img class="image1bg" src="images/bg100.png" width="792" height="612" alt="Bg100">
-							<a class="down" href="#"><img class="scroll"src="images/scroll.png" width="792" height="612" alt="Scroll"></a>
-				
-							<img id="fly-it" class="banner place" src="images/banner.png" width="792" height="612" >		
-						<div id="choco_container"></div> 
-				
-						</div>
-						
-							
-							
-			</div>
-			
-			
-				<div class="color-block-2"></div>
-				<div class="color-block-3"></div>
-				<div class="color-block-4"></div>
-				<div class="color-block-5"></div>
+
+
+
+
+<body>
+	<img class="scroll" src="images/scroll.png" width="792" height="612" alt="Scroll" />
+	<div class="color-block" id="block1">
+		<img id="fly-it" class="banner place" src="images/banner.png" width="792" height="612">	
+		<img id="left" src="images/100_left.png">						
+		<img id="right" src="images/100_right.png">
+		<div class="chocolateContainer"></div>	
+    </div>
+	<div class="color-block" id="block2">
+	    
+	    <div id="chocoblock2">
+    		<img id="milksections" src="images/sections/milk.png"/>	
+    		<img id="choc_block" src="images/sections/choc_block.png" alt="Choc Block" />
+    	</div>
+    	
+    
+		<div class="wrapimage">
+           	  <div id="label1">
+           	    
+           	      <div class="info">
+           	      <img src="images/label.png"></img>  
+           	      <div class="plablecontainer">
+           	          <p class="label1p">Out of   <span class="highlights">  100 </span> chocolates that I ate most common were <span class="highlights"><b>milk</b></span> <span class="smallerp"></br>&#8226;click on the chocolate&#8226;</span></p>
+           	          </div>  
+           	      </div>       	      
+              </div>
+		</div>
+		<span id="pin2"></span>
+	</div>
+		<div class="color-block" id="block3">
+		    
+		<div id="slider"></div>		
+		<div id="chunkbox">				
+		    <img class="chunk" id="chunk1" src="images/sections/separates/milk_nocolor.png" width="255" height="234" alt="Chunk1">
+		    <img class="chunk" id="chunk2" src="images/sections/separates/dark.png" width="287" height="166" alt="Chunk2">	
+		    <img class="chunk" id="chunk3" src="images/sections/separates/white.png" width="95" height="30" alt="Three White">
+		    <img class="chunk" id="chunk4" src="images/sections/separates/truffle.png" width="287" height="64" alt="Truffle">
+		</div>
+	    
+	     <div id="label2">
+       	     <div class="info">
+       	      <img class="labelsize" src="images/label.png"></img>  
+       	      <div class="plablecontainer">
+       	          <p class="label2p"><span class="smallerp2">&#8226;<span class="highlights"> Click</span> on the chocolate to find more &#8226;</span></p>
+       	          </div>  
+       	      </div>       	      
+          </div>
+		
+	        <div id="labelset">
+	                     <div id="firstinfo">
+	                         <p id="details1p" class="text_treatment">40 Milk</p>
+	                         <img id="details1" src="images/label_set1.png">
+	                    </div>
+	                    <div id="secondinfo">
+	                         <p id="details2p" class="text_treatment">30 Dark</p>
+ 	                         <img id="details2" src="images/label_set1.png"> 
+ 	                     </div>    
+ 	                      <div id="thirdinfo">
+     	                         <p id="details3p" class="text_treatment">3 White</p>
+      	                         <img id="details3" src="images/label_set1.png"> 
+      	                     </div>       
+      	                     
+      	                     <div id="fourthinfo">
+          	                         <p id="details4p" class="text_treatment">12 Truffle</p>
+           	                         <img id="details4" src="images/label_set1.png"> 
+           	                     </div>    
+           	                <div id="containerend">     
+           	                     <div class="theend" id="end">
+           	                     <img id="endimage" src="images/theend_1.png" width="419" height="172" alt="Theend 1"> 
+           	                     <p class="endp">..... for now</p>
+           	                     </div>
+           	                </div>     
+	            </div>		
 
 	
-</div>  <!-- end container -->
-<script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  	<script src="js/jquery.superscrollorama.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
+	</div>	
+	<div class="color-block" id="block4">
+	  
+	</div>
+	<div class="color-block" id="block5"></div>
+
+
 <script>
 
-//cloning choco's
+
+
+$(function() {
+    function eventCallback() {
+      $(".box").fadeOut();
+      // $(this).fadeOut();
+    }
+
+    $(".box").on("click",eventCallback);
+
+});
+
+
+$(document).ready(function() {
+			
+			
+			var scrollorama = $.scrollorama({ blocks:'.color-block' });
+			
+			
+			scrollorama.onBlockChange(function() {
+				var i = scrollorama.blockIndex;
+				$('#console')
+					.css('display','block')
+					.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+			});
+			
+			
+		
+			
+			scrollorama
+				.animate('#fly-it',{ delay: 250, duration: 300, property:'left', start:-1400, end:150, pin:true  })
+				.animate('#fly-it',{ delay: 1000, duration: 300, property:'right', start:150, end:-1400, pin:true  })
+				.animate('#left',{ delay: 1500, duration: 300, property:'right', start:0, end:1000, pin:true })
+				.animate('#right',{ delay: 1500, duration: 300, property:'left', start:0, end:1000, pin:true })
+				
+				.animate('#label1',{ delay: 1000, duration: 300, property:'left', start:-4200, end:630, pin:true  })
+				.animate('#label2',{ delay: 100, duration: 500, property:'left', start:-4200, end:90, pin:true  })
+				
+				.animate('#pin2',{ delay: 100, duration: 4000, property:'right', start:-800, end:200, pin:true })
+
+				.animate('#slider',{ delay: 900, duration: 3500, property:'left', start:-9000, end:0, pin:true })
+				
+			    //.animate('#endimage',{ delay: 3000, duration: 500, property:'left', start:-4200, end:90, pin:true  })
+			
+				
+				
+				
+			
+				
+				
+});
+		
+//Initially Add chocolates as hidden
 $(function() {
     var x = 0;
-    while(x < 100) {
-      var card = $("<div class='choco'><p></p></div>");
-      $("#choco_container").append(card);
-      x++;
+    var i = 0; //variable to hold # of chocolates
+    
+    while(i < 100) {
+        //var chocolate = $("<img id='chocolate" + i + "' class='imgChocolate' src='images/choc_trimmed.png'></img>");
+        var chocolate = $("<img class='imgChocolate' src='images/choc_trimmed.png'></img>");
+        chocolate.attr('id', 'chocolate' + i);
+        chocolate.hide();
+        $(".chocolateContainer").append(chocolate);
+        i++;
     }
- 
 });
 
 //banner moving
+var showBanner = 1;
+var x=0;
 
-var showBanner = 1
+//j is used for showing chocolates
+var j = 0;
 
-$(document).scroll(	
-		function () {
-			if (showBanner) {
-				showBanner = 0;
-				$("#fly-it").animate({left: "200px"},300,"easeOutBack",false);
-				setTimeout(function () {$("#fly-it").animate({top: "-600px"},300,"easeOutSine",false);},3000)
+$(document).ready(function(){
+    $("#choc_block").hide();
+    $("#chunkbox").hide();
+});
+
+//FUnction to show chocolates
+function showChocolates() {
+    $('#chocolate' + j).fadeIn('fast');
+    j++;
+    if (j < 100 && $(this).scrollTop() > 1200){
+        setTimeout(showChocolates, 30);
+    }
+}
+
+//FUnction to show chocolates
+function hideChocolates() {
+    var i = 0;
+    j = 0;
+    while(i < 100) {
+        $('#chocolate' + i).fadeOut('fast');
+        i++;
+    }
+}
+
+$(document).scroll(  
+     function () {
+		    //chocolates appearing
+		    if ($(this).scrollTop() > 1000)
+			{
+                showChocolates();
 			}
-		}
-	);
+			else
+			{
+			    hideChocolates();
+			}
+			
+			//chocolates hover over
+			if ($(this).scrollTop() > 2800 && $(this).scrollTop() < 4000)
+			{
+			    $(".hoverChocolate").html("<img id='chocsize2' src='images/milk.png'></img>");
+			}
+			else
+			{
+		        $(".hoverChocolate").html("<img id='chocsize2' src='images/choc_trimmed.png'></img>");
+			}
+		
+	        if ( $(this).scrollTop() > 2000)
+			{
+			    $("div.chocolateContainer").hide();
+			}
+	        if ( $(this).scrollTop() <= 1999)
+			{
+			    $("div.chocolateContainer").show();
+			}
+		
+			if ( $(this).scrollTop() > 2000 && $(this).scrollTop() < 8000)
+			{
+			    $("#choc_block").show();
+			}
+	        if ( $(this).scrollTop() > 8000)
+			{
+			    $("#choc_block").hide();
+			}
+			if ( $(this).scrollTop() < 1800)
+			{
+			    $("#choc_block").hide();
+			}
+			
+			if ( $(this).scrollTop() > 8000 && $(this).scrollTop() < 10000)
+        	{
+        		$("#chunkbox").show();
+        	}
+            if ( $(this).scrollTop() > 10000)
+        	{
+        		$("#chunkbox").hide();
+            }
+        	if ( $(this).scrollTop() < 7999)
+        	{
+        		$("#chunkbox").hide();
+        	}
+        	
+             
+                        
+        
+            });
 
-//scrollorama
 
-        $(document).ready(function() {
-        			var controller = $.superscrollorama();
-        			// individual element tween examples
-        		controller.addTween('.choco', TweenMax.from( $('.choco'), .5, {css:{opacity: 0}}));
-        		
-        		});
-        	</script>
+
+
+ $(document).ready(  
+        function () {
+            
+            $("#chock_block").click(function(){
+                    $("#milksections").show();     
+
+               })
+                .mouseleave(function(){
+                  $("#milksections").hide();
+               });
+               
+               $("#choc_block").click(function(){
+           		$("#milksections").show();
+           	})
+           	 .mouseleave(function(){
+           		$("#milksections").hide();
+           	
+           	})
+           	;
+            
+               
+         
+    $("#chunk1").click(function(){
+         $("#details1p, #details1").fadeIn();     
+
+    })
+     .mouseleave(function(){
+       $("#details1p, #details1").hide();
+    });
+    
+    $("#chunk2").click(function(){
+            $("#details2p, #details2").fadeIn();     
+
+       })
+        .mouseleave(function(){
+            $("#details2p, #details2").hide();
+                                   });
+                                  
+    $("#chunk3").click(function(){
+         $("#details3p, #details3").fadeIn(1500);     
+
+    })
+        .mouseleave(function(){
+            $("#details3p, #details3").hide();
+     });
+             $("#chunk4").click(function(){
+                $("#details4p, #details4").fadeIn(1000);     
+ })
+              .mouseleave(function(){
+              $("#details4p, #details4").hide();
+   });
+   
+   $("#chunkbox").click(function(){
+     $("#chunk1").animate({marginLeft:0, marginTop:50}, 700);       
+     
+   })
+    .mouseleave(function(){
+     $("#chunk1").animate({marginLeft:0, marginTop:0 }, 700); 
+     
+   });
+
+
+   $("#chunkbox").click(function(){
+     $("#chunk2").animate({marginLeft:100}, 700);
+   })
+    .mouseleave(function(){
+     $("#chunk2").animate({marginLeft:0}, 700);
+   });
+   
+   
+   $("#chunkbox").click(function(){
+     $("#chunk4").animate({marginLeft:0, marginTop:130}, 700);
+   })
+    .mouseleave(function(){
+     $("#chunk4").animate({marginLeft:0, marginTop:0}, 700);
+   });
+
+   $("#chunkbox").click(function(){
+       $("#chunk3").animate({marginLeft:100, marginTop:50}, 700);
+     })
+      .mouseleave(function(){
+       $("#chunk3").animate({marginLeft:0, marginTop:0}, 700);
+     });
+ 
+       
+       
+   
+  console.log($(this).scrollTop());
+
+
+
+ });
+ 
+	
+			
+	
+
 </script>
 
 </body>
