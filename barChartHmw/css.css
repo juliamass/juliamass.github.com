@@ -1,0 +1,78 @@
+.row{
+	position:relative;
+	margin:60px 0px;
+}
+
+.incidents{
+	margin-left:410px;
+	height:20px;
+	/*background-color:pink;*/
+	border-top:solid 2px pink;
+	font-size:12px;
+	color:black;	
+}
+
+.domestic{
+	margin-left:410px;
+	height:20px;
+	/*background-color:green;*/
+	border-top:solid 2px green;
+	font-size:12px;
+	color:black;
+	
+	
+	
+}
+.names{
+	position:absolute;
+	top:-20px;
+	left:410px;
+	width:700px;
+	text-align:left;
+	color:black;
+	font-size:15px;
+	letter-spacing:px;
+	font-family: 'Squada One', cursive;
+	letter-spacing:1px;
+
+	
+}
+
+
+.domesticText{
+	position:absolute;
+	top:20px;
+	left:100px;
+	width:300px;
+	text-align:right;
+	color:green;
+	font-family: 'Offside', cursive;
+	font-size:13px;
+	
+
+	
+	
+}
+
+.incidentText{
+	position:absolute;
+	top:0px;
+	left:100px;
+	width:300px;
+	text-align:right;	
+	color:pink;	
+	font-family: 'Offside', cursive;
+	font-size:13px;
+
+
+}
+.incident-number{
+	border:solid red;
+}
+body{
+	position:absolute;
+	left:-50px;
+
+}
+
+
