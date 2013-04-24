@@ -1,0 +1,23 @@
+$(function() {
+ 
+  var i= 0;
+  while(i < crimes.data.length){
+  
+    var  crime = crimes.data[i];
+
+    var crimeCode = crime[41];
+
+	var neighbourhood = crime[22];
+	
+	var y = parseInt(crime[35],10);	//turns a string into a number, parse means to turn into somehting else
+	var x = parseInt(crime[34],10);	
+    
+    console.log(crimeCode);
+	
+	var div = $("<div>").text(neighbourhood);
+	$("body").append(div);	
+    
+    
+    i++;
+   }
+});

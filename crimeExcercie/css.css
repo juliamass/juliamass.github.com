@@ -1,0 +1,14 @@
+.circles{
+	border-radius:50%;
+}
+/*
+body{
+	position:relative;
+	top:300px;
+	left:300px;
+}*/
+
+.crimes{
+	border:solid red;
+	width:100px;
+}
